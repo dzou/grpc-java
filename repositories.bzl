@@ -31,7 +31,7 @@ IO_GRPC_GRPC_JAVA_ARTIFACTS = [
     "io.netty:netty-codec:4.1.48.Final",
     "io.netty:netty-common:4.1.48.Final",
     "io.netty:netty-handler-proxy:4.1.48.Final",
-    "io.netty:netty-handler:4.1.48.Final",
+    "io.netty:netty-handler:4.1.51.Final-SNAPSHOT",
     "io.netty:netty-resolver:4.1.48.Final",
     "io.netty:netty-tcnative-boringssl-static:2.0.30.Final",
     "io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.48.Final",
@@ -372,9 +372,8 @@ def io_netty_netty_common():
 def io_netty_netty_handler():
     jvm_maven_import_external(
         name = "io_netty_netty_handler",
-        artifact = "io.netty:netty-handler:4.1.48.Final",
+        artifact = "io.netty:netty-handler:4.1.51.Final-SNAPSHOT",
         server_urls = ["https://repo.maven.apache.org/maven2/"],
-        artifact_sha256 = "757f83c7891ad2ebad209f02d8dbca0121e03f7062c2d4ec9d00eba1a0d403d5",
         licenses = ["notice"],  # Apache 2.0
     )
 
